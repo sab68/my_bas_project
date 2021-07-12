@@ -1,0 +1,4 @@
+COLUMN TABLE "TST_TABLE_1" (
+column_1 VARCHAR (20),
+column_2 INTEGER
+)

@@ -1,0 +1,23 @@
+_schema-version: "2.1"
+ID: TST_HDI_PROJECT
+version: 0.0.1
+modules:
+- name: db
+  type: hdb
+  path: db
+  requires:
+  - name: hdi_db
+    properties:
+      TARGET_CONTAINER: ~{hdi-container-name}
+  - name: TST_USR_Provided_service
+resources:
+- name: hdi_db
+  type: com.sap.xs.hdi-container
+  parameters:
+    config:
+      database_id: 87dd4bc3-3582-4367-9a8d-edbf8ed12822
+  properties:
+    hdi-container-name: ${service-name}
+- name: TST_USR_Provided_service
+  type: org.cloudfoundry.existing-service
+

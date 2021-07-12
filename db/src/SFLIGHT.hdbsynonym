@@ -1,0 +1,14 @@
+{
+  "SAGENCYDATA": {
+    "target": {
+      "object": "SAGENCYDATA",
+      "schema": "SFLIGHT"
+    }
+  },
+  "STRAVELAG": {
+    "target": {
+      "object": "STRAVELAG",
+      "schema": "SFLIGHT"
+    }
+  }
+}
